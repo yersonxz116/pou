@@ -419,9 +419,6 @@ def chat(data: Mensaje):
     return {
         "mensaje": data.texto,
         "intencion": intent,
-        "confianza": round(confianza, 4),
-        "origen": origen,
-        "groq_error": groq_error,
         "respuesta": respuesta
     }
     
